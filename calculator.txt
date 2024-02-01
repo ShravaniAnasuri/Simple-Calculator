@@ -1,0 +1,50 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"operator list\n";
+    cout<<"      ADDITION OPERATOR '+'\n";
+    cout<<"MULTIPLICATION OPERATOR '*' \n";
+    cout<<"      DIVISION OPERATOR '/' \n";
+    cout<<"   SUBTRACTION OPERATOR '-' \n";
+    
+    int num;
+    cout<<"\n enter number of calculations ";
+    cin>>num;
+    for(int i=1;i<=num;i++){
+    
+    int a;
+    cout<<" enter a number ";
+    cin>>a;
+    
+    int b;
+    cout<<" enter another number ";
+    cin>>b;
+        
+    char op;
+    cout<<" enter an operator ";
+    cin>>op;
+    
+    if(op=='+'){
+        cout<<a<<"+"<<b<<"="<<(a+b)<<"\n";
+    }
+    
+    else if(op=='*'){
+        cout<<a<<"*"<<b<<"="<<(a*b)<<"\n";
+    }
+    
+    else if(op=='/'){
+        cout<<a<<"/"<<b<<"="<<(a/b)<<"\n";
+    }
+    
+    else if(op=='-'){
+        cout<<a<<"-"<<b<<"="<<(a-b)<<"\n";
+    }
+        
+    }
+    
+    return 0;
+}
